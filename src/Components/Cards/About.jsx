@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { MyFullContext } from "../../MyContext";
+import { MyLastFullContext } from "../../MyLastContext";
 
 const About = () => {
   const [data, setData] = useContext(MyFullContext);
+  const title = useContext(MyLastFullContext);
   console.log(data);
   const onDelete = (id) => {
     let res = data.filter((item) => item.id !== id);
@@ -37,6 +39,7 @@ const About = () => {
             </button>
           </div>
         ))}
+        <h2>{title}</h2>
       </div>
     </div>
   );

@@ -7,11 +7,9 @@ const Navbar = () => {
 
   return (
     <>
-      {/* <h1 style={{ textAlign: "center", paddingTop: "20px" }}>
-        {() =>
-          data.length > 1 ? `${data.length} users` : `${data.length} user`
-        }
-      </h1> */}
+      <h1 style={{ textAlign: "center", paddingTop: "20px" }}>
+        There are {data.length} users
+      </h1>
     </>
   );
 };
