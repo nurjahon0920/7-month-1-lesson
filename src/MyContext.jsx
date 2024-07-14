@@ -103,7 +103,9 @@ const MyComponentPrividerCom = ({ children }) => {
   // const data =
   //   "data = data || {}; data = data || {}; data = data || {}; data = data || {}; data = data || {};";
   return (
-    <MyFullContext.Provider value={data}>{children}</MyFullContext.Provider>
+    <MyFullContext.Provider value={[data, setData]}>
+      {children}
+    </MyFullContext.Provider>
   );
 };
 

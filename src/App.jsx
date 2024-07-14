@@ -1,12 +1,12 @@
 import React from "react";
 import MyComponentPrividerCom from "./MyContext";
 import Navbar from "./Components/Navbar/Navbar";
-// import Main from "./Components/Main";
+import About from "./Components/Cards/About";
 const App = () => {
   return (
     <MyComponentPrividerCom>
       <Navbar />
-      {/* <Main /> */}
+      <About />
     </MyComponentPrividerCom>
   );
 };
